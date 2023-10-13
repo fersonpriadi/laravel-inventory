@@ -12,7 +12,7 @@
 
     <!-- Custom styles for this template -->
   <link rel="stylesheet" href="{{asset('Bootstrap/css/bootstrap.min.css')}}">
-  <link rel="shortcut icon" href="{{asset('image/download.jpg')}}" type="image/x-icon">
+  <link rel="shortcut icon" href="{{asset('image/logo1.png')}}" type="image/x-icon">
 
   </head>
   <body class="text-center">
@@ -20,7 +20,7 @@
 <main class="form-signin form w-25 m-auto mt-5">
   <form method="post" action="{{route('kirim-data-login')}}">
     @csrf
-    <img class="mb-4" src="{{asset('image/download.jpg')}}" alt="" width="72" height="57">
+    <img class="mb-4" src="{{asset('image/logo1.png')}}" alt="" width="90" height="70">
     <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
     {{$errors->first('email')}}
 
